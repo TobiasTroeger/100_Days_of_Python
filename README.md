@@ -1,1 +1,1 @@
-# 100_Days_of_Pyhon
+# 100_Days_of_Python
