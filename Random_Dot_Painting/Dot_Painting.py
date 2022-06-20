@@ -1,5 +1,3 @@
-# Final project - Painting Dots
-
 # The program extracts the colors of an image and uses turtle to paint an image of 10 x 10 random colored dots.
 
 
@@ -14,7 +12,7 @@ colors_extracted = colorgram.extract("Hirst_painting.jpg", 20)
 def random_color(color_list):
     """
     Takes a random color of a color list and transforms the corresponding RGB values into a tuple.
-    :param color_list: a list of colors extracted from an image by colorgram
+    :param color_list: a list of 20 colors extracted from an image by colorgram
     :return: random RGB color tuple
     """
     chosen_colors = (random.choice(color_list)).rgb
@@ -25,7 +23,7 @@ def random_color(color_list):
 def painting_dots(color_list):
     """
     Paints 10 random colored dots from left to right and resets the position of the turtle after completion.
-    :param color_list: a list of colors extracted from an image by colorgram
+    :param color_list: a list of 20 colors extracted from an image by colorgram
     """
     for i in range(10):
         color = random_color(color_list)
